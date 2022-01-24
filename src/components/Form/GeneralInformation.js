@@ -21,6 +21,12 @@ class GeneralInformation extends React.Component {
           onChange={handleChange}
         />
         <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          onChange={handleChange}
+        />
+        <input
           type="email"
           name="email"
           placeholder="Email"
@@ -36,6 +42,12 @@ class GeneralInformation extends React.Component {
           type="text"
           name="address"
           placeholder="Address"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="description"
+          placeholder="Description"
           onChange={handleChange}
         />
       </div>
