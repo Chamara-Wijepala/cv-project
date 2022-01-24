@@ -1,15 +1,14 @@
 import React from "react";
-import Header from "./components/Preview/Header";
+import PreviewHeader from "./components/Preview/PreviewHeader";
+import PreviewMain from "./components/Preview/PreviewMain";
 
 class Preview extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     return(
       <div>
-        <Header state={this.props.state}></Header>
+        <PreviewHeader state={this.props.state}></PreviewHeader>
+        <PreviewMain state={this.props.state}></PreviewMain>
       </div>
     )
   }

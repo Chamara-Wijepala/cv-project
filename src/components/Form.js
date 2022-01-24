@@ -4,9 +4,6 @@ import Education from "./Form/Education";
 import PracticalExperience from "./Form/PracticalExperience";
 
 class Form extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   
   render() {
     const { handleChange } = this.props;
@@ -14,8 +11,8 @@ class Form extends React.Component {
     return(
       <form>
         <GeneralInformation handleChange={handleChange}></GeneralInformation>
-        <Education></Education>
-        <PracticalExperience></PracticalExperience>
+        <Education handleChange={handleChange}></Education>
+        <PracticalExperience handleChange={handleChange}></PracticalExperience>
         <button type="submit">Submit</button>
       </form>
     )

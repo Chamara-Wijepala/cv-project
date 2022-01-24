@@ -1,9 +1,6 @@
 import React from "react";
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+class PreviewHeader extends React.Component {
 
   render() {
     const { firstName, lastName } = this.props.state.formValues;
@@ -16,4 +13,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default PreviewHeader;

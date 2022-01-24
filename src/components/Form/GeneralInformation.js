@@ -1,9 +1,6 @@
 import React from "react";
 
 class GeneralInformation extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     const { handleChange } = this.props;
