@@ -9,9 +9,11 @@ class Form extends React.Component {
   }
   
   render() {
+    const { handleChange } = this.props;
+
     return(
       <form>
-        <GeneralInformation></GeneralInformation>
+        <GeneralInformation handleChange={handleChange}></GeneralInformation>
         <Education></Education>
         <PracticalExperience></PracticalExperience>
         <button type="submit">Submit</button>
