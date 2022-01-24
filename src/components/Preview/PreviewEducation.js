@@ -24,10 +24,7 @@ class PreviewEducation extends React.Component {
           <h2>Subject</h2> {subject}
         </div>
         <div>
-          <h2>From</h2> {attendedFrom}
-        </div>
-        <div>
-          <h2>Until</h2> {attendedUntil}
+          <h2>{attendedFrom} - {attendedUntil}</h2>
         </div>
       </div>
     )

@@ -19,10 +19,7 @@ class PreviewExperience extends React.Component {
           <h2>Position</h2> {position}
         </div>
         <div>
-          <h2>From</h2> {workedFrom}
-        </div>
-        <div>
-          <h2>Until</h2> {workedUntil}
+          <h2>{workedFrom} - {workedUntil}</h2>
         </div>
       </div>
     )
