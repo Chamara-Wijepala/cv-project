@@ -1,6 +1,6 @@
 import React from "react";
-import PreviewHeader from "./components/Preview/PreviewHeader";
-import PreviewMain from "./components/Preview/PreviewMain";
+import PreviewHeader from "./Preview/PreviewHeader";
+import PreviewMain from "./Preview/PreviewMain";
 
 class Preview extends React.Component {
 
