@@ -7,17 +7,17 @@ class PreviewSidebar extends React.Component {
 
     return(
       <div id="PreviewSidebar">
-        <h1>Personal Info</h1>
+        <h1 className="SectionHeading">Personal Info</h1>
         <div>
-          <h2>Email</h2>
+          <h2 className="SubsectionHeading">Email</h2>
           {email}
         </div>
         <div>
-          <h2>Phone Number</h2>
+          <h2 className="SubsectionHeading">Phone Number</h2>
           {phoneNumber}
         </div>
         <div>
-          <h2>Address</h2>
+          <h2 className="SubsectionHeading">Address</h2>
           {address}
         </div>
       </div>

@@ -38,3 +38,11 @@ input {
   color: white;
   min-height: 5rem;
 }
+
+.SectionHeading {
+  font-size: 1.25rem;
+}
+
+.SubsectionHeading {
+  font-size: 1rem;
+}

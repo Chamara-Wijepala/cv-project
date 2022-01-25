@@ -13,18 +13,18 @@ class PreviewEducation extends React.Component {
     
     return(
       <div>
-        <h1>Education</h1>
+        <h1 className="SectionHeading">Education</h1>
         <div>
-          <h2>University</h2> {university}
+          <h2 className="SubsectionHeading">University</h2> {university}
         </div>
         <div>
-          <h2>Degree</h2> {degree}
+          <h2 className="SubsectionHeading">Degree</h2> {degree}
         </div>
         <div>
-          <h2>Subject</h2> {subject}
+          <h2 className="SubsectionHeading">Subject</h2> {subject}
         </div>
         <div>
-          <h2>{attendedFrom} - {attendedUntil}</h2>
+          <h2 className="SubsectionHeading">{attendedFrom} - {attendedUntil}</h2>
         </div>
       </div>
     )

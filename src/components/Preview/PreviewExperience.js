@@ -11,15 +11,15 @@ class PreviewExperience extends React.Component {
     
     return(
       <div>
-        <h1>Practical Experience</h1>
+        <h1 className="SectionHeading">Practical Experience</h1>
         <div>
-          <h2>Company</h2> {company}
+          <h2 className="SubsectionHeading">Company</h2> {company}
         </div>
         <div>
-          <h2>Position</h2> {position}
+          <h2 className="SubsectionHeading">Position</h2> {position}
         </div>
         <div>
-          <h2>{workedFrom} - {workedUntil}</h2>
+          <h2 className="SubsectionHeading">{workedFrom} - {workedUntil}</h2>
         </div>
       </div>
     )
