@@ -6,7 +6,7 @@ class PreviewSidebar extends React.Component {
     const { email, phoneNumber, address } = this.props.state.formValues;
 
     return(
-      <div>
+      <div id="PreviewSidebar">
         <h1>Personal Info</h1>
         <div>
           <h2>Email</h2>

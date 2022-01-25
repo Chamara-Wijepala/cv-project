@@ -7,7 +7,7 @@ class PreviewContent extends React.Component {
 
   render() {
     return(
-      <div>
+      <div id="PreviewContent">
         <PreviewDescription state={this.props.state}></PreviewDescription>
         <PreviewEducation state={this.props.state}></PreviewEducation>
         <PreviewExperience state={this.props.state}></PreviewExperience>

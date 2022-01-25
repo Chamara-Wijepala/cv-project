@@ -19,15 +19,14 @@ main {
 .FlexItem {
   width: 40%;
   margin-top: 3rem;
-  border-radius: 3px;
 }
 
 #Form {
-  background-color: #F7F7F7;
+  background-color: #EEEEEE;
 }
 
 #Preview {
-  background-color: #F7F7F7;
+  background-color: #EEEEEE;
 }
 
 input {
@@ -37,4 +36,5 @@ input {
 #PreviewHeader {
   background-color: #343A46;
   color: white;
+  min-height: 5rem;
 }

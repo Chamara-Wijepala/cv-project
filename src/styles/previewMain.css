@@ -1,0 +1,16 @@
+#PreviewMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+#PreviewContent {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+
+#PreviewSidebar {
+  background-color: #DDDDDD;
+  flex-grow: 1;
+  flex-basis: 0;
+}
