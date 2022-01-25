@@ -6,7 +6,7 @@ class Preview extends React.Component {
 
   render() {
     return(
-      <div>
+      <div id="Preview" className="FlexItem">
         <PreviewHeader state={this.props.state}></PreviewHeader>
         <PreviewMain state={this.props.state}></PreviewMain>
       </div>

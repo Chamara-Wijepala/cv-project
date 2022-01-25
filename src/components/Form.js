@@ -9,7 +9,7 @@ class Form extends React.Component {
     const { handleChange } = this.props;
 
     return(
-      <form>
+      <form id="Form" className="FlexItem">
         <GeneralInformation handleChange={handleChange}></GeneralInformation>
         <Education handleChange={handleChange}></Education>
         <PracticalExperience handleChange={handleChange}></PracticalExperience>

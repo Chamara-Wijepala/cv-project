@@ -27,10 +27,10 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
+      <main>
         <Form handleChange={this.handleChange}></Form>
         <Preview state={this.state}></Preview>
-      </div>
+      </main>
     )
   }
 }

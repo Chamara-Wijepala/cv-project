@@ -6,7 +6,7 @@ class PreviewHeader extends React.Component {
     const { firstName, lastName, title } = this.props.state.formValues;
 
     return(
-      <div>
+      <div id="PreviewHeader">
         <h1>{firstName} {lastName}</h1>
         <p>{title}</p>
       </div>
