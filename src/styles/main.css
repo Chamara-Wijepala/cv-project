@@ -30,6 +30,16 @@ main {
   margin-bottom: 1rem;
 }
 
+#SubmitButton {
+  background-color: #52BE80;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5rem;
+  float: right;
+  font-size: 1rem;
+}
+
 #Preview {
   background-color: #EEEEEE;
 }

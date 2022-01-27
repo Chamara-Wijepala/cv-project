@@ -13,7 +13,7 @@ class Form extends React.Component {
         <GeneralInformation handleChange={handleChange}></GeneralInformation>
         <Education handleChange={handleChange}></Education>
         <PracticalExperience handleChange={handleChange}></PracticalExperience>
-        <button type="submit">Submit</button>
+        <button type="submit" id="SubmitButton">Submit</button>
       </form>
     )
   }
