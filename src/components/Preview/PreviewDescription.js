@@ -7,7 +7,7 @@ class PreviewDescription extends React.Component {
     return(
       <div className="PreviewSection">
         <h1 className="SectionHeading PreviewSectionHeading">Description</h1>
-        <p>{description}</p>
+        <p className="Subsection">{description}</p>
       </div>
     )
   }

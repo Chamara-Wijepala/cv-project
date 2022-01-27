@@ -15,16 +15,19 @@ class PreviewEducation extends React.Component {
       <div className="PreviewSection">
         <h1 className="SectionHeading PreviewSectionHeading">Education</h1>
         <div>
-          <h2 className="SubsectionHeading">University</h2> {university}
+          <h2 className="SubsectionHeading">University</h2>
+          <p className="Subsection">{university}</p>
         </div>
         <div>
-          <h2 className="SubsectionHeading">Degree</h2> {degree}
+          <h2 className="SubsectionHeading">Degree</h2>
+          <p className="Subsection">{degree}</p>
         </div>
         <div>
-          <h2 className="SubsectionHeading">Subject</h2> {subject}
+          <h2 className="SubsectionHeading">Subject</h2>
+          <p className="Subsection">{subject}</p>
         </div>
         <div>
-          <h2 className="SubsectionHeading">{attendedFrom} - {attendedUntil}</h2>
+          <h2 className="SubsectionHeading Subsection">{attendedFrom} - {attendedUntil}</h2>
         </div>
       </div>
     )

@@ -10,15 +10,15 @@ class PreviewSidebar extends React.Component {
         <h1 className="SectionHeading PreviewSectionHeading">Personal Info</h1>
         <div>
           <h2 className="SubsectionHeading">Email</h2>
-          {email}
+          <p className="Subsection">{email}</p>
         </div>
         <div>
           <h2 className="SubsectionHeading">Phone Number</h2>
-          {phoneNumber}
+          <p className="Subsection">{phoneNumber}</p>
         </div>
         <div>
           <h2 className="SubsectionHeading">Address</h2>
-          {address}
+          <p className="Subsection">{address}</p>
         </div>
       </div>
     )

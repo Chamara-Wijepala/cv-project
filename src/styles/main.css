@@ -19,6 +19,7 @@ main {
 .FlexItem {
   width: 40%;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #Form {
@@ -73,10 +74,41 @@ input {
   padding-top: 0.5rem;
 }
 
+#UserName {
+  word-wrap: break-word;
+}
+
+.Subsection {
+  word-wrap: break-word;
+}
+
 .PreviewSection {
   margin-bottom: 1rem;
 }
 
 .PreviewSectionHeading {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FlexItem {
+    min-width: 80%;
+  }
+
+  #UserName {
+    font-size: 1.2rem;
+  }
+
+  #UserTitle {
+    font-size: 0.8rem;
+  }
+
+  #PreviewMain {
+    flex-direction: column;
+  }
 }
