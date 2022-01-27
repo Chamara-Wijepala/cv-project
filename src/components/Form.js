@@ -6,10 +6,10 @@ import PracticalExperience from "./Form/PracticalExperience";
 class Form extends React.Component {
   
   render() {
-    const { handleChange } = this.props;
+    const { handleChange, handleSubmit } = this.props;
 
     return(
-      <form id="Form" className="FlexItem">
+      <form id="Form" className="FlexItem" onSubmit={handleSubmit}>
         <GeneralInformation handleChange={handleChange}></GeneralInformation>
         <Education handleChange={handleChange}></Education>
         <PracticalExperience handleChange={handleChange}></PracticalExperience>

@@ -11,6 +11,7 @@ class App extends React.Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -25,10 +26,14 @@ class App extends React.Component {
     })
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
   render() {
     return(
       <main>
-        <Form handleChange={this.handleChange}></Form>
+        <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit}></Form>
         <Preview state={this.state}></Preview>
       </main>
     )
