@@ -12,8 +12,8 @@ class PreviewEducation extends React.Component {
     } = this.props.state.formValues;
     
     return(
-      <div>
-        <h1 className="SectionHeading">Education</h1>
+      <div className="PreviewSection">
+        <h1 className="SectionHeading PreviewSectionHeading">Education</h1>
         <div>
           <h2 className="SubsectionHeading">University</h2> {university}
         </div>

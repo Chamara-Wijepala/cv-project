@@ -6,7 +6,7 @@ class Education extends React.Component {
     const { handleChange } = this.props;
 
     return(
-      <div>
+      <div className="FormSection">
         <h1 className="SectionHeading">Education</h1>
         <input
           type="text"

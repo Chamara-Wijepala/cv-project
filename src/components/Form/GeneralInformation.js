@@ -6,7 +6,7 @@ class GeneralInformation extends React.Component {
     const { handleChange } = this.props;
 
     return(
-      <div>
+      <div className="FormSection">
         <h1 className="SectionHeading">General Information</h1>
         <input
           type="text"

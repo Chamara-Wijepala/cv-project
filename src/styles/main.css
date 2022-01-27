@@ -23,6 +23,11 @@ main {
 
 #Form {
   background-color: #EEEEEE;
+  padding: 1rem;
+}
+
+.FormSection {
+  margin-bottom: 1rem;
 }
 
 #Preview {
@@ -31,18 +36,37 @@ main {
 
 input {
   width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 #PreviewHeader {
   background-color: #343A46;
   color: white;
-  min-height: 5rem;
+  min-height: 4rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .SectionHeading {
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .SubsectionHeading {
   font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.PreviewSection {
+  margin-bottom: 1rem;
+}
+
+.PreviewSectionHeading {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }

@@ -5,8 +5,8 @@ class PreviewDescription extends React.Component {
     const { description } = this.props.state.formValues;
 
     return(
-      <div>
-        <h1 className="SectionHeading">Description</h1>
+      <div className="PreviewSection">
+        <h1 className="SectionHeading PreviewSectionHeading">Description</h1>
         <p>{description}</p>
       </div>
     )
