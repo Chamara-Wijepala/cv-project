@@ -1,58 +1,32 @@
 import React from "react";
+import FormInput from "./FormInput";
 
-class GeneralInformation extends React.Component {
+export default function GeneralInformation({ handleChange }) {
 
-  render() {
-    const { handleChange } = this.props;
+  const inputItems = [
+    { id: 'firstName', placeholder: 'First Name' },
+    { id: 'lastName', placeholder: 'Last Name' },
+    { id: 'title', placeholder: 'Title' },
+    { id: 'email', placeholder: 'Email' },
+    { id: 'phoneNumber', placeholder: 'Phone Number' },
+    { id: 'address', placeholder: 'Address' },
+    { id: 'description', placeholder: 'Description' },
+  ]
 
-    return(
-      <div className="FormSection">
-        <h1 className="SectionHeading">General Information</h1>
-        <input
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="title"
-          placeholder="Title"
-          onChange={handleChange}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-        />
-        <input
-          type="tel"
-          name="phoneNumber"
-          placeholder="Phone Number"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="address"
-          placeholder="Address"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="description"
-          placeholder="Description"
-          onChange={handleChange}
-        />
-      </div>
+  const inputSection = inputItems.map((item) => (
+      <FormInput
+        key={item.id}
+        name={item.id}
+        placeholder={item.placeholder}
+        handleChange={handleChange}
+      ></FormInput>
     )
-  }
-}
+  )
 
-export default GeneralInformation;
+  return (
+    <div className="FormSection">
+      <h1 className="SectionHeading">General Information</h1>
+      {inputSection}
+    </div>
+  )
+}
