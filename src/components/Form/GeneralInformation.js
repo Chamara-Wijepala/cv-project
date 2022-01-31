@@ -2,7 +2,6 @@ import React from "react";
 import FormInput from "./FormInput";
 
 export default function GeneralInformation({ handleChange }) {
-
   const inputItems = [
     { id: 'firstName', placeholder: 'First Name' },
     { id: 'lastName', placeholder: 'Last Name' },
@@ -20,13 +19,12 @@ export default function GeneralInformation({ handleChange }) {
         placeholder={item.placeholder}
         handleChange={handleChange}
       ></FormInput>
-    )
-  )
+  ))
 
   return (
     <div className="FormSection">
       <h1 className="SectionHeading">General Information</h1>
-      {inputSection}
+      { inputSection }
     </div>
   )
 }

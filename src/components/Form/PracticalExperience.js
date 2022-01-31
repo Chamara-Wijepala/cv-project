@@ -1,40 +1,27 @@
 import React from "react";
+import FormInput from "./FormInput";
 
-class PracticalExperience extends React.Component {
+export default function PracticalExperience({ handleChange }) {
+  const inputItems = [
+    { id: 'company', placeholder: 'Company' },
+    { id: 'position', placeholder: 'Position' },
+    { id: 'workedFrom', placeholder: 'Employed From' },
+    { id: 'workedUntil', placeholder: 'Employed Until' },
+  ]
 
-  render() {
-    const { handleChange } = this.props;
+  const inputSection = inputItems.map((item) => (
+    <FormInput
+      key={item.id}
+      name={item.id}
+      placeholder={item.placeholder}
+      handleChange={handleChange}
+    ></FormInput>
+  ))
 
-    return(
-      <div className="FormSection">
-        <h1 className="SectionHeading">Practical Experience</h1>
-        <input
-          type="text"
-          name="company"
-          placeholder="Company"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="position"
-          placeholder="Position"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="workedFrom"
-          placeholder="From"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="workedUntil"
-          placeholder="Until"
-          onChange={handleChange}
-        />
-      </div>
-    )
-  }
+  return (
+    <div className="FormSection">
+      <h1 className="SectionHeading">Practical Experience</h1>
+      { inputSection }
+    </div>
+  )
 }
-
-export default PracticalExperience;
