@@ -3,13 +3,13 @@ import CreateFormInput from "./CreateFormInput";
 
 export default function GeneralInformation({ handleChange }) {
   const inputItems = [
-    { id: 'firstName', placeholder: 'First Name' },
-    { id: 'lastName', placeholder: 'Last Name' },
-    { id: 'title', placeholder: 'Title' },
-    { id: 'email', placeholder: 'Email' },
-    { id: 'phoneNumber', placeholder: 'Phone Number' },
-    { id: 'address', placeholder: 'Address' },
-    { id: 'description', placeholder: 'Description' },
+    { name: 'firstName', placeholder: 'First Name' },
+    { name: 'lastName', placeholder: 'Last Name' },
+    { name: 'title', placeholder: 'Title' },
+    { name: 'email', placeholder: 'Email' },
+    { name: 'phoneNumber', placeholder: 'Phone Number' },
+    { name: 'address', placeholder: 'Address' },
+    { name: 'description', placeholder: 'Description' },
   ]
 
   const inputSection = CreateFormInput(inputItems, handleChange);

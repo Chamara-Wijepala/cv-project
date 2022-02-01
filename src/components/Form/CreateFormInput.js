@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function CreateFormInput(inputItems, handleChange) {
-  return inputItems.map((item) => (
+  return inputItems.map((item, index) => (
     <input
-      key={item.id}
+      key={index}
       type="text"
-      name={item.id}
+      name={item.name}
       placeholder={item.placeholder}
       onChange={handleChange}
     ></input>

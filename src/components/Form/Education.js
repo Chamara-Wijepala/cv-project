@@ -3,11 +3,11 @@ import CreateFormInput from "./CreateFormInput";
 
 export default function Education({ handleChange }) {
   const inputItems = [
-    { id: 'university', placeholder: 'University' },
-    { id: 'degree', placeholder: 'Degree' },
-    { id: 'subject', placeholder: 'Subject' },
-    { id: 'attendedFrom', placeholder: 'Attended From' },
-    { id: 'attendedUntil', placeholder: 'Attended Until' },
+    { name: 'university', placeholder: 'University' },
+    { name: 'degree', placeholder: 'Degree' },
+    { name: 'subject', placeholder: 'Subject' },
+    { name: 'attendedFrom', placeholder: 'Attended From' },
+    { name: 'attendedUntil', placeholder: 'Attended Until' },
   ]
 
   const inputSection = CreateFormInput(inputItems, handleChange);

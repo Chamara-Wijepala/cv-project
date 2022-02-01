@@ -3,10 +3,10 @@ import CreateFormInput from "./CreateFormInput";
 
 export default function PracticalExperience({ handleChange }) {
   const inputItems = [
-    { id: 'company', placeholder: 'Company' },
-    { id: 'position', placeholder: 'Position' },
-    { id: 'workedFrom', placeholder: 'Employed From' },
-    { id: 'workedUntil', placeholder: 'Employed Until' },
+    { name: 'company', placeholder: 'Company' },
+    { name: 'position', placeholder: 'Position' },
+    { name: 'workedFrom', placeholder: 'Employed From' },
+    { name: 'workedUntil', placeholder: 'Employed Until' },
   ]
 
   const inputSection = CreateFormInput(inputItems, handleChange);
