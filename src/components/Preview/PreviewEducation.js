@@ -1,14 +1,14 @@
 import React from "react";
 import CreateSubsection from "./Subsection";
 
-export default function PreviewEducation({ state }) {
+export default function PreviewEducation({ props }) {
   const {
     university,
     degree,
     subject,
     attendedFrom,
     attendedUntil
-  } = state.formValues;
+  } = { ...props };
   const subsectionItems = [
     { value: university, heading: 'University' },
     { value: degree, heading: 'Degree' },

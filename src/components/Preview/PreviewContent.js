@@ -3,14 +3,12 @@ import PreviewDescription from "./PreviewDescription";
 import PreviewEducation from "./PreviewEducation";
 import PreviewExperience from "./PreviewExperience";
 
-export default function PreviewContent(props) {
-  const { state } = props;
-
+export default function PreviewContent({ props }) {
   return(
     <div id="PreviewContent">
-      <PreviewDescription state={state}/>
-      <PreviewEducation state={state}/>
-      <PreviewExperience state={state}/>
+      <PreviewDescription props={props}/>
+      <PreviewEducation props={props}/>
+      <PreviewExperience props={props}/>
     </div>
   )
 }

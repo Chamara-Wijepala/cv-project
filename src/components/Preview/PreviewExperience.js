@@ -1,13 +1,13 @@
 import React from "react";
 import CreateSubsection from "./Subsection";
 
-export default function PreviewExperience({ state }) {
+export default function PreviewExperience({ props }) {
   const {
     company,
     position,
     workedFrom,
     workedUntil,
-  } = state.formValues;
+  } = { ...props };
   const subsectionItems = [
     { value: company, heading: 'Company'},
     { value: position, heading: 'Position'},

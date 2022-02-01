@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function PreviewDescription({ state }) {
-  const { description } = state.formValues;
+export default function PreviewDescription({ props }) {
+  const { description } = { ...props };
 
   return(
     <div className="PreviewSection">
