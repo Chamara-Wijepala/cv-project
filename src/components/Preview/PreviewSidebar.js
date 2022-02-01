@@ -1,28 +1,20 @@
 import React from "react";
+import CreateSubsection from "./Subsection";
 
-class PreviewSidebar extends React.Component {
+export default function PreviewSidebar({ state }) {
+  const { email, phoneNumber, address } = state.formValues;
+  const subsectionItems = [
+    { value: email, heading: 'Email' },
+    { value: phoneNumber, heading: 'Phone Number' },
+    { value: address, heading: 'Address' },
+  ]
 
-  render() {
-    const { email, phoneNumber, address } = this.props.state.formValues;
+  const sidebarSection = CreateSubsection(subsectionItems);
 
-    return(
-      <div id="PreviewSidebar">
-        <h1 className="SectionHeading PreviewSectionHeading">Personal Info</h1>
-        <div>
-          <h2 className="SubsectionHeading">Email</h2>
-          <p className="Subsection">{email}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading">Phone Number</h2>
-          <p className="Subsection">{phoneNumber}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading">Address</h2>
-          <p className="Subsection">{address}</p>
-        </div>
-      </div>
-    )
-  }
+  return (
+    <div id="PreviewSidebar">
+      <h1 className="SectionHeading PreviewSectionHeading">Personal Info</h1>
+      { sidebarSection }
+    </div>
+  )
 }
-
-export default PreviewSidebar;
