@@ -1,46 +1,21 @@
 import React from "react";
+import CreateFormInput from "./CreateFormInput";
 
-class Education extends React.Component {
+export default function Education({ handleChange }) {
+  const inputItems = [
+    { id: 'university', placeholder: 'University' },
+    { id: 'degree', placeholder: 'Degree' },
+    { id: 'subject', placeholder: 'Subject' },
+    { id: 'attendedFrom', placeholder: 'Attended From' },
+    { id: 'attendedUntil', placeholder: 'Attended Until' },
+  ]
 
-  render() {
-    const { handleChange } = this.props;
+  const inputSection = CreateFormInput(inputItems, handleChange);
 
-    return(
-      <div className="FormSection">
-        <h1 className="SectionHeading">Education</h1>
-        <input
-          type="text"
-          name="university"
-          placeholder="University"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="degree"
-          placeholder="Degree"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="attendedFrom"
-          placeholder="From"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="attendedUntil"
-          placeholder="Until"
-          onChange={handleChange}
-        />
-      </div>
-    )
-  }
+  return (
+    <div className="FormSection">
+      <h1 className="SectionHeading">Education</h1>
+      { inputSection }
+    </div>
+  )
 }
-
-export default Education;
