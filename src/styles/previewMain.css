@@ -8,6 +8,7 @@
   flex-grow: 2;
   flex-basis: 0;
   padding: 1rem;
+  min-width: 1%;
 }
 
 #PreviewSidebar {
@@ -15,4 +16,5 @@
   flex-grow: 1;
   flex-basis: 0;
   padding: 1rem;
+  min-width: 1%;
 }
