@@ -3,13 +3,11 @@ import PreviewContent from "./PreviewContent";
 import PreviewSidebar from "./PreviewSidebar";
 import '../../styles/previewMain.css';
 
-export default function PreviewMain(props) {
-  const { state } = props;
-
+export default function PreviewMain({ props }) {
   return(
     <div id="PreviewMain">
-      <PreviewContent state={state}/>
-      <PreviewSidebar state={state}/>
+      <PreviewContent props={props}/>
+      <PreviewSidebar props={props}/>
     </div>
   )
 }

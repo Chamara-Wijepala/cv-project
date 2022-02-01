@@ -1,8 +1,8 @@
 import React from "react";
 import CreateSubsection from "./Subsection";
 
-export default function PreviewSidebar({ state }) {
-  const { email, phoneNumber, address } = state.formValues;
+export default function PreviewSidebar({ props }) {
+  const { email, phoneNumber, address } = { ...props };
   const subsectionItems = [
     { value: email, heading: 'Email' },
     { value: phoneNumber, heading: 'Phone Number' },
