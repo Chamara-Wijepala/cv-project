@@ -3,16 +3,13 @@ import PreviewContent from "./PreviewContent";
 import PreviewSidebar from "./PreviewSidebar";
 import '../../styles/previewMain.css';
 
-class PreviewMain extends React.Component {
+export default function PreviewMain(props) {
+  const { state } = props;
 
-  render() {
-    return(
-      <div id="PreviewMain">
-        <PreviewContent state={this.props.state}></PreviewContent>
-        <PreviewSidebar state={this.props.state}></PreviewSidebar>
-      </div>
-    )
-  }
+  return(
+    <div id="PreviewMain">
+      <PreviewContent state={state}/>
+      <PreviewSidebar state={state}/>
+    </div>
+  )
 }
-
-export default PreviewMain;
