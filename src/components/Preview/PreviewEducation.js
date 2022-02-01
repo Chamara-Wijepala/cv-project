@@ -1,37 +1,29 @@
 import React from "react";
+import CreateSubsection from "./Subsection";
 
-class PreviewEducation extends React.Component {
+export default function PreviewEducation({ state }) {
+  const {
+    university,
+    degree,
+    subject,
+    attendedFrom,
+    attendedUntil
+  } = state.formValues;
+  const subsectionItems = [
+    { value: university, heading: 'University' },
+    { value: degree, heading: 'Degree' },
+    { value: subject, heading: 'Subject' },
+  ]
 
-  render() {
-    const {
-      university,
-      degree,
-      subject,
-      attendedFrom,
-      attendedUntil
-    } = this.props.state.formValues;
+  const previewSection = CreateSubsection(subsectionItems);
     
-    return(
-      <div className="PreviewSection">
-        <h1 className="SectionHeading PreviewSectionHeading">Education</h1>
-        <div>
-          <h2 className="SubsectionHeading">University</h2>
-          <p className="Subsection">{university}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading">Degree</h2>
-          <p className="Subsection">{degree}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading">Subject</h2>
-          <p className="Subsection">{subject}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading Subsection">{attendedFrom} - {attendedUntil}</h2>
-        </div>
+  return(
+    <div className="PreviewSection">
+      <h1 className="SectionHeading PreviewSectionHeading">Education</h1>
+      { previewSection }
+      <div>
+        <h2 className="SubsectionHeading Subsection">{attendedFrom} - {attendedUntil}</h2>
       </div>
-    )
-  }
+    </div>
+  )
 }
-
-export default PreviewEducation;

@@ -3,17 +3,14 @@ import PreviewDescription from "./PreviewDescription";
 import PreviewEducation from "./PreviewEducation";
 import PreviewExperience from "./PreviewExperience";
 
-class PreviewContent extends React.Component {
+export default function PreviewContent(props) {
+  const { state } = props;
 
-  render() {
-    return(
-      <div id="PreviewContent">
-        <PreviewDescription state={this.props.state}></PreviewDescription>
-        <PreviewEducation state={this.props.state}></PreviewEducation>
-        <PreviewExperience state={this.props.state}></PreviewExperience>
-      </div>
-    )
-  }
+  return(
+    <div id="PreviewContent">
+      <PreviewDescription state={state}/>
+      <PreviewEducation state={state}/>
+      <PreviewExperience state={state}/>
+    </div>
+  )
 }
-
-export default PreviewContent;

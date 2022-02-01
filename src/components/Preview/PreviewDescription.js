@@ -1,16 +1,12 @@
 import React from "react";
 
-class PreviewDescription extends React.Component {
-  render() {
-    const { description } = this.props.state.formValues;
+export default function PreviewDescription({ state }) {
+  const { description } = state.formValues;
 
-    return(
-      <div className="PreviewSection">
-        <h1 className="SectionHeading PreviewSectionHeading">Description</h1>
-        <p className="Subsection">{description}</p>
-      </div>
-    )
-  }
+  return(
+    <div className="PreviewSection">
+      <h1 className="SectionHeading PreviewSectionHeading">Description</h1>
+      <p className="Subsection">{description}</p>
+    </div>
+  )
 }
-
-export default PreviewDescription;

@@ -1,31 +1,27 @@
 import React from "react";
+import CreateSubsection from "./Subsection";
 
-class PreviewExperience extends React.Component {
-  render() {
-    const {
-      company,
-      position,
-      workedFrom,
-      workedUntil,
-    } = this.props.state.formValues;
-    
-    return(
-      <div className="PreviewSection">
-        <h1 className="SectionHeading PreviewSectionHeading">Practical Experience</h1>
-        <div>
-          <h2 className="SubsectionHeading">Company</h2>
-          <p className="Subsection">{company}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading">Position</h2>
-          <p className="Subsection">{position}</p>
-        </div>
-        <div>
-          <h2 className="SubsectionHeading Subsection">{workedFrom} - {workedUntil}</h2>
-        </div>
+export default function PreviewExperience({ state }) {
+  const {
+    company,
+    position,
+    workedFrom,
+    workedUntil,
+  } = state.formValues;
+  const subsectionItems = [
+    { value: company, heading: 'Company'},
+    { value: position, heading: 'Position'},
+  ]
+
+  const previewSection = CreateSubsection(subsectionItems);
+  
+  return(
+    <div className="PreviewSection">
+      <h1 className="SectionHeading PreviewSectionHeading">Practical Experience</h1>
+      { previewSection }
+      <div>
+        <h2 className="SubsectionHeading Subsection">{workedFrom} - {workedUntil}</h2>
       </div>
-    )
-  }
+    </div>
+  )
 }
-
-export default PreviewExperience;
