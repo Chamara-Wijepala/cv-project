@@ -1,5 +1,5 @@
 import React from "react";
-import FormInput from "./FormInput";
+import CreateFormInput from "./CreateFormInput";
 
 export default function PracticalExperience({ handleChange }) {
   const inputItems = [
@@ -9,14 +9,7 @@ export default function PracticalExperience({ handleChange }) {
     { id: 'workedUntil', placeholder: 'Employed Until' },
   ]
 
-  const inputSection = inputItems.map((item) => (
-    <FormInput
-      key={item.id}
-      name={item.id}
-      placeholder={item.placeholder}
-      handleChange={handleChange}
-    ></FormInput>
-  ))
+  const inputSection = CreateFormInput(inputItems, handleChange);
 
   return (
     <div className="FormSection">
